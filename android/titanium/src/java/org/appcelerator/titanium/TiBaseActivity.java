@@ -917,6 +917,8 @@ public abstract class TiBaseActivity extends AppCompatActivity implements TiActi
 		if (window == null) {
 			return super.dispatchKeyEvent(event);
 		}
+		
+		Log.d(TAG, "KeyEVENT " + event.getKeyCode() + " onPress", Log.DEBUG_MODE);
 
 		switch (event.getKeyCode()) {
 			case KeyEvent.KEYCODE_BACK: {
